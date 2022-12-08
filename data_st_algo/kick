@@ -1,0 +1,9 @@
+t=int(input())
+for i in range(t):
+    n=int(input())
+    l=[]
+    for i in range(n):
+        c,d,u= [int(x) if x.isdigit() else x for x in input("").split()]
+        l.append([c,d,u])
+    print(l)
+    print(0)

@@ -1,0 +1,41 @@
+#function calling itself is recursion
+#factorial 
+"""
+def fact(n):
+    if n==0:
+        return 1
+    else:
+        return n*fact(n-1)
+a=int(input())
+ans=fact(a)
+print(ans)"""
+#power
+"""
+def power(n):
+    if n==0:
+        return 1
+    else:
+        return 2*power(n-1)
+a=int(input())
+ans=power(a)
+print(ans)
+#
+class Solution:#for reference
+    def fib(self, n: int) -> int:
+        if n==0:
+            return 0
+        elif n==1:
+            return 1
+        else:
+            return  self.fib(n-1)+self.fib(n-2)
+"""
+#print your name 5 times
+def ntimes(s,n):
+    if n==0:
+        return 
+    else:
+        print(s)
+        ntimes(s,n-1)
+s=input()
+n=int(input())
+ntimes(s,n)
